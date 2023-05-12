@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Урок 4 | Функции и параметры</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 10px 30px;
+			font: 17px Arial, sans-serif;
+			background-color: orange;
+		}
+		h1 {
+			color:  purple;
+			text-align: center;
+		}
+		.content-wrap {
+			display: flex;
+			justify-content: space-between;
+			gap: 50px;
+		}
+		form {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid plum;
+			border-radius: 4px;
+			background-color: pink;
+		}
+		form b {
+			position: absolute;
+			bottom: 7px;
+			left: 0;
+			display: none;
+			width: 100%;
+			color: #ff5252;
+			text-align: center;
+		}
+		input,
+		button {
+			display: block;
+			width: 60%;
+			margin: 0 auto;
+			padding: 5px;
+			border: 1px solid purple;
+			border-radius: 4px;
+			outline: none;
+			color: purple;
+			font: 700 20px Arial, sans-serif;
+			text-align: center;
+		}
+		button {
+			margin: 10px auto 20px;
+			color: #fafafa;
+			font-size: 16px;
+			background-color: purple;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Функции и параметры</h1>
+	<div class="content-wrap">
+		<form>
+			<input type="text">
+			<button>Подтвердить</button>
+			<b>Доступ запрещён!</b>
+		</form>
+	</div>
+	<script>
+
+document.querySelector('button').addEventListener('click', e => {
+	e.preventDefault();
+	const input = document.querySelector('input');
+	const error = document.querySelector('form b');
+
+	if (input.value.length === 0) {
+		showError('Поле не может быть пустым', 'green');
+	} else if (input.value.length < 4) {
+		showError('Поле не может быть меньше 4', 'red');
+	} else if (input.value.length > 4) {
+		showError('Поле не может быть больше 4', 'blue');
+	}
+
+	function showError(text, color) {
+		error.style.display = 'block';
+		input.style.borderColor = color;
+		error.textContent = text;
+	}
+
+});
+
+'Поле не может быть пустым'
+'Поле не может быть меньше 4'
+'Поле не может быть больше 4'
+	</script>
+</body>
+</html>

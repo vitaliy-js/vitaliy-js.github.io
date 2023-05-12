@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Урок 5 | Return и Стрелочные функции</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 10px 30px;
+			font: 17px Arial, sans-serif;
+			background-color: orange;
+		}
+		h1 {
+			color:  purple;
+			text-align: center;
+		}
+		.content-wrap {
+			display: flex;
+			justify-content: space-between;
+			gap: 50px;
+		}
+		form {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid plum;
+			border-radius: 4px;
+			background-color: pink;
+		}
+		form b {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+			color: purple;
+			font-size: 24px;
+			text-align: center;
+		}
+		input,
+		button {
+			display: block;
+			width: 60%;
+			margin: 0 auto;
+			padding: 5px;
+			border: 1px solid purple;
+			border-radius: 4px;
+			outline: none;
+			color: purple;
+			font: 700 20px Arial, sans-serif;
+			text-align: center;
+		}
+		button {
+			margin: 10px auto 20px;
+			color: #fafafa;
+			font-size: 16px;
+			background-color: purple;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Return и Стрелочные функции</h1>
+	<div class="content-wrap">
+		<form>
+			<b>Random</b>
+			<input type="text">
+			<button>Подтвердить</button>
+		</form>
+	</div>
+	<script>
+
+document.querySelector('button').addEventListener('click', (e) => {
+	e.preventDefault();
+	const randomVal = document.querySelector('form b');
+	const input = document.querySelector('input');
+
+	const getRandom = (length) => Math.floor(Math.random() * length) + 1;
+	randomVal.textContent = getRandom(input.value);
+
+	// function getRandom(length) {
+	// 	return Math.floor(Math.random() * length) + 1;
+	// }
+});
+	</script>
+</body>
+</html>

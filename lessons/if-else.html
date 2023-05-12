@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Урок 3 | if-else</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 10px 30px;
+			font: 17px Arial, sans-serif;
+			background-color: orange;
+		}
+		h1 {
+			color:  purple;
+			text-align: center;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid plum;
+			border-radius: 4px;
+			background-color: pink;
+		}
+		input,
+		button {
+			display: block;
+			width: 60%;
+			margin: 0 auto;
+			padding: 5px;
+			border: 1px solid purple;
+			border-radius: 4px;
+			outline: none;
+			color: purple;
+			font: 700 20px Arial, sans-serif;
+			text-align: center;
+		}
+		button {
+			margin: 10px auto 20px;
+			color: #fafafa;
+			font-size: 16px;
+			background-color: purple;
+			cursor: pointer;
+		}
+		ol {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+			width: 80%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		li {
+			list-style-type: none;
+			border: 1px solid #3a3a3a;
+			border-radius: 4px;
+			background-color: #ccc;
+			text-align: center;
+			user-select: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Условный оператор if</h1>
+	<div>
+		<form>
+			<input type="text">
+			<button>Подтвердить</button>
+		</form>
+		<ol></ol>
+	</div>
+	<script>
+
+document.querySelector('form').addEventListener('submit', e => {
+	e.preventDefault();
+/*
+	Метод console.log()
+	Выводит ошибки, значения, результаты выполнения кода и т.п.
+*/
+
+const input = document.querySelector('input');
+//console.log(input.value.length);
+
+
+//Оператор if else if  else
+
+/*
+	Формула:
+	if (условие) {
+		действие;
+	}
+*/
+
+if (input.value.length === 0) {
+	console.log('Поле не может быть пустым');
+} else if (input.value.length < 4) {
+	console.log('Поле не может быть меньше 4');
+} else if (input.value.length > 4) {
+	console.log('Поле не может быть больше 4');
+} else {
+	console.log('PIN введён верно');
+}
+
+
+/* Товары: возраст от 18 и старше
+	меньше 18 - false
+	18 и старше - true
+*/
+
+/* let age = 18;
+	if (age < 18) {
+		console.log(false);
+	} else {
+		console.log(true);
+	}
+*/
+
+});
+	for (let i = 1; i < 10; i++) {
+		document.querySelector('ol').innerHTML += `<li>${i}</li>`;
+	}
+	</script>
+</body>
+</html>

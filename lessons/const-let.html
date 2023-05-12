@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Урок 1 | const-let</title>
+	<style>
+		body {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 10px 30px;
+			font: 17px Arial, sans-serif;
+			background-color: orange;
+		}
+		h1 {
+			color:  purple;
+			text-align: center;
+		}
+		div {
+			position: relative;
+			width: 250px;
+			height: 250px;
+			margin: 40px auto 0;
+			background-color: pink;
+		}
+		b {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 60px;
+			color: bisque;
+			font-size: 20px;
+			line-height: 60px;
+			background-color: orangered;
+			text-align: center;
+			transform: translate(-50%,-75%);
+		}
+		button {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			width: 60px;
+			height: 60px;
+			border: 2px solid purple;
+			border-radius: 50%;
+			color: purple;
+			font: 700 20px Arial, sans-serif;
+			background-color: bisque;
+			transform: translateX(-50%);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Константы и переменные</h1>
+	<div>
+		<b>Карандаши</b>
+		<button>10</button>
+	</div>
+	<script>
+
+// Преимущества констант и переменных:
+// 1. Аккуратность кода
+const box = document.querySelector('b');
+
+box.style.background = 'purple';
+box.textContent = 'Фломастеры';
+
+
+// 2. Хранение значений
+let badge = 'Краски';
+badge = 'Мел';
+
+box.textContent = badge;
+document.querySelector('h1').textContent = badge;
+
+
+// 3. Изменение значений
+
+
+// Константа (const) -  значение не может изменяться
+// Переменная (let)  -  значение может изменяться
+
+const button = document.querySelector('button');
+let counter = 10;
+button.textContent = counter;
+
+/* 
+Правилах объявления переменных/констант, присвоении им значений:
+1. Имя
+	A. В основном используется camelCase   myNameIs
+	B. Цифры можно использовать, но первый символ не может с неё начинаться
+	C. Из символов можно использовать только $ и _
+
+2. Значения
+A. Буквы, символы, цифры (вместе с буквами) должны быть в кавычках (const email = '1@t.com';) 
+B. Цифры - без кавычек (let age = 18;)
+C. Зарезервированные слова - без кавычек (const box = document.querySelector('b');)
+
+3. Одинаковая переменная не может объявляться дважды
+	неверно: 
+	let name = 'vasya';
+	let name = 'misha';
+	верно:
+	let name = 'vasya';
+	name = 'misha';
+*/
+
+button.addEventListener('click', () => {
+	counter = counter - 1;
+	button.textContent = counter;
+});
+	</script>
+</body>
+</html>

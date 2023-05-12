@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Урок 2 | elements-attributes</title>
+	<style>
+		body {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 10px 30px;
+			font: 17px Arial, sans-serif;
+			background-color: orange;
+		}
+		h1 {
+			color:  purple;
+			text-align: center;
+		}
+		.shelf {
+			position: relative;
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+			margin: 50px auto;
+		}
+		.shelf::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: brown;
+		}
+		b {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 80px;
+			height: 50px;
+			border-radius: 6px;
+			color: #fafafa;
+			background-color: purple;
+		}
+		input {
+			display: block;
+			margin: 0 auto;
+			padding: 8px;
+			border: 1px solid purple;
+			border-radius: 4px;
+			outline: none;
+			color: purple;
+			font: inherit;
+			background-color: pink;
+		}
+		input:disabled {
+			opacity: 0.7;
+			background-color: pink;
+		}
+		.yellow {
+			font-size: 21px;
+			background-color: gold;
+			cursor: pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Элементы и атрибуты</h1>
+	<div class="shelf">
+		<b class="white">White</b>
+		<b id="red">Red</b>
+		<b>Yellow</b>
+	</div>
+	<input type="text" placeholder="Choose color">
+	<script>
+
+	//Доступ к элементам
+	const paint = document.querySelector('.white');
+	const red = document.querySelector('#red');
+
+	//Смена текста (свойство textContent)
+	paint.textContent = 'Black';
+
+	//Доступ к html-атрибутам
+	const input = document.querySelector('input');
+	input.placeholder = 'Choose paint';
+	input.value = 'Black';
+	input.disabled = false;
+
+	paint.style.backgroundColor = 'black';
+	paint.style.width = '200px';
+	paint.style.fontSize = '20px';
+
+
+	//Добавление и удаление классов
+	const yellow = document.querySelector('b:last-child');
+	yellow.classList.add('yellow');
+	yellow.classList.remove('yellow');
+	paint.classList.remove('white');
+
+	</script>
+</body>
+</html>
