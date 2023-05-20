@@ -75,29 +75,28 @@
 	<input type="text" placeholder="Choose color">
 	<script>
 
-	//Доступ к элементам
-	const paint = document.querySelector('.white');
-	const red = document.querySelector('#red');
+//Доступ к элементам
+const paint = document.querySelector('.white');
+const red = document.querySelector('#red');
 
-	//Смена текста (свойство textContent)
-	paint.textContent = 'Black';
+//Смена текста (свойство textContent)
+paint.textContent = 'Black';
 
-	//Доступ к html-атрибутам
-	const input = document.querySelector('input');
-	input.placeholder = 'Choose paint';
-	input.value = 'Black';
-	input.disabled = false;
+//Доступ к html-атрибутам
+const input = document.querySelector('input');
+input.placeholder = 'Choose paint';
+input.value = 'Black';
+input.disabled = false;
 
-	paint.style.backgroundColor = 'black';
-	paint.style.width = '200px';
-	paint.style.fontSize = '20px';
+paint.style.backgroundColor = 'black';
+paint.style.width = '200px';
+paint.style.fontSize = '20px';
 
-
-	//Добавление и удаление классов
-	const yellow = document.querySelector('b:last-child');
-	yellow.classList.add('yellow');
-	yellow.classList.remove('yellow');
-	paint.classList.remove('white');
+//Добавление и удаление классов
+const yellow = document.querySelector('b:last-child');
+yellow.classList.add('yellow');
+yellow.classList.remove('yellow');
+paint.classList.remove('white');
 
 	</script>
 </body>

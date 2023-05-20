@@ -15,7 +15,9 @@ const modal = content => {
     setTimeout(() => document.body.onclick = () => closeOverlay(overlay), 200);
 
     document.body.addEventListener('keydown', e => {
-		if (e.key === 'Escape') closeOverlay();
+		if (e.key === 'Escape') {
+            closeOverlay();
+        }
 	});
 }
 

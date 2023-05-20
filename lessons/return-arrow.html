@@ -78,13 +78,23 @@
 	<script>
 
 document.querySelector('button').addEventListener('click', (e) => {
-	e.preventDefault();
-	const randomVal = document.querySelector('form b');
-	const input = document.querySelector('input');
+e.preventDefault();
 
-	const getRandom = (length) => Math.floor(Math.random() * length) + 1;
-	randomVal.textContent = getRandom(input.value);
+//Оператор return возвращает значение, которое было получено при выполнении данной функции
+//Код ниже return игнорируется, так как после него завершается выполнение функции
+//Стрелочная функция имеет более короткий синтаксис и позволяет сразу возвращать значение
 
+const randomVal = document.querySelector('form b');
+const input = document.querySelector('input');
+
+
+//Пример со стрелочной функцией
+const getRandom = (length) => Math.floor(Math.random() * length) + 1;
+
+randomVal.textContent = getRandom(input.value);
+
+
+//Пример с обычной функцией
 	// function getRandom(length) {
 	// 	return Math.floor(Math.random() * length) + 1;
 	// }

@@ -1,0 +1,31 @@
+{
+    "id": 4,
+    "title": "Функции и параметры",
+    "test": [
+        {
+            "question": "Какое ключевое слово используется для создания функции?",
+            "answer": ["console","function","classList"],
+            "correct": 1
+        },
+        {
+            "question": "В каком варианте функция вызвана верно?",
+            "answer": ["getMessage()","getMessage","get Message()"],
+            "correct": 0
+        },
+        {
+            "question": "Сколько раз можно вызвать обычную функцию?",
+            "answer": ["1","2","3","Неограниченное количество раз"],
+            "correct": 3
+        },
+        {
+            "question": "Сколько параметров можно добавить в функцию?",
+            "answer": ["1","2","3","Неограниченное количество раз"],
+            "correct": 3
+        },
+        {
+            "question": "Какая функция объявлена без ошибки?",
+            "answer": ["function addUser('Jack') {}","function addUser(userName) {}", "function addUser(user name) {}"],
+            "correct": 1
+        }
+    ]
+}  

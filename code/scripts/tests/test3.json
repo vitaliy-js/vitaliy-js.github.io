@@ -1,0 +1,41 @@
+{
+    "id": 3,
+    "title": "Условный оператор if",
+    "test": [
+        {
+            "question": "Какой метод позволяет вывести ошибки/значения в консоль?",
+            "answer": ["showError()","function.log()","console.log()"],
+            "correct": 2
+        },
+        {
+            "question": "Как посчитать количество символов в константе input?",
+            "answer": ["input.value.length","input.textContent","input.value.count"],
+            "correct": 0
+        },
+        {
+            "question": "Какая конструкция используется для 2-х условий?",
+            "answer": ["if","if - else","if - else if - else"],
+            "correct": 1
+        },
+        {
+            "question": "Каким образом выполняется равенство в условии if?",
+            "answer": ["=","===","=>"],
+            "correct": 1
+        },
+        {
+            "question": "Какая конструкция используется при одном условии?",
+            "answer": ["if","if - else if","if - else"],
+            "correct": 0
+        },
+        {
+            "question": "В коде 3+ условия, и первое не выполнилось. Какое условие будет проверяться следующим?",
+            "answer": ["if","else if","else"],
+            "correct": 1
+        },
+        {
+            "question": "Какое значение можно использовать, если условие выполняется?",
+            "answer": ["false","'false'","true","'true'"],
+            "correct": 2
+        }
+    ]
+}  

@@ -80,24 +80,20 @@
 	<script>
 
 document.querySelector('form').addEventListener('submit', e => {
-	e.preventDefault();
-/*
-	Метод console.log()
-	Выводит ошибки, значения, результаты выполнения кода и т.п.
-*/
+e.preventDefault();
+
+// Метод console.log()
+// Выводит ошибки, значения, результаты выполнения кода и т.п.
 
 const input = document.querySelector('input');
 //console.log(input.value.length);
 
 
-//Оператор if else if  else
-
-/*
-	Формула:
-	if (условие) {
-		действие;
-	}
-*/
+//Оператор if, else if, else
+// Формула:
+// if (условие) {
+// 	действие;
+// }
 
 if (input.value.length === 0) {
 	console.log('Поле не может быть пустым');
@@ -110,18 +106,16 @@ if (input.value.length === 0) {
 }
 
 
-/* Товары: возраст от 18 и старше
-	меньше 18 - false
-	18 и старше - true
-*/
+// Товары: возраст от 18 и старше
+// меньше 18 - false
+// 18 и старше - true
 
-/* let age = 18;
-	if (age < 18) {
-		console.log(false);
-	} else {
-		console.log(true);
-	}
-*/
+// let age = 18;
+// if (age < 18) {
+// 	console.log(false);
+// } else {
+// 	console.log(true);
+// }
 
 });
 	for (let i = 1; i < 10; i++) {

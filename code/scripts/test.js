@@ -1,6 +1,7 @@
 import {createPage} from './content/page.js';
 import * as loader from './components/loader.js';
 import {modal} from './components/modal.js';
+//import {unitTests} from './utility/unitTests.js';
 
 const test = () => {
     const getTestId = () => {
@@ -20,6 +21,7 @@ const test = () => {
             const data = await res.json();
             createPage('test');
             createTest(data, id);
+            //unitTests(data);
         }
         catch(err) {
             window.location.href = './err.html';
@@ -136,4 +138,4 @@ function setBest(id) {
     }
 }
 
-export {test};
+export {test,finishTest};

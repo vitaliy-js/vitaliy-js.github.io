@@ -1,0 +1,24 @@
+{
+    "id": 5,
+    "title": "Return и Стрелочные функции",
+    "practice": [
+        {
+            "task": "Функция <span>sumValue</span> должна просуммировать и вернуть 2 значения",
+            "code": "<span></span> sumValue(a,&nbsp;b) {<br>&nbsp;&nbsp;<i><span></span>&nbsp;a&nbsp;<span></span>&nbsp;b  </i>;<br>}",
+            "answers": ["const","=>","()","function","+","-","return","="],
+            "correct": ["function","return","+"]
+        },
+        {
+            "task": "Стрелочная функция <span>sumValue</span> должна просуммировать и вернуть 2 значения",
+            "code": "<span></span> addText <span></span> (a,&nbsp;b)&nbsp; <span></span> a&nbsp;<span></span>&nbsp;b</i>;",
+            "answers": ["const","=>","()","function","+","-","return","="],
+            "correct": ["const","=","=>","+"]
+        },
+        {
+            "task": "Стрелочная функция <span>getDiscount</span> должна возвращать <span>50%</span>, если <span>age&nbsp;<&nbsp;18</span>. Для остальных случаев - <span>0%</span>",
+            "code": "<span></span> getDiscount = ()&nbsp; <span></span> {<br>&nbsp;&nbsp;&nbsp;<span></span><i>(age&nbsp;<&nbsp;18)</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span> 50%;<br>&nbsp;&nbsp;&nbsp;} <span></span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span> 0%;<br>&nbsp;&nbsp;&nbsp;}<br>}",
+            "answers": ["const","=>","()","function","if","else if","else","return","return","="],
+            "correct": ["const","=>","if","return","else","return"]
+        }
+    ]
+}

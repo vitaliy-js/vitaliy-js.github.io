@@ -80,6 +80,12 @@
 
 document.querySelector('button').addEventListener('click', e => {
 	e.preventDefault();
+	
+	//Функция - своего рода шаблон, который можно переиспользовать много раз;
+	//Чтобы функция запустилась в нужной части кода, её нужно вызвать (например, showError());
+	//Параметры могут передавать разные значения при переиспользовании функции (чем-то похожи на переменные)
+	//Параметры добавляются во внутрь скобок. Если их 2+, они перечисляются через запятую
+	
 	const input = document.querySelector('input');
 	const error = document.querySelector('form b');
 
@@ -96,12 +102,7 @@ document.querySelector('button').addEventListener('click', e => {
 		input.style.borderColor = color;
 		error.textContent = text;
 	}
-
 });
-
-'Поле не может быть пустым'
-'Поле не может быть меньше 4'
-'Поле не может быть больше 4'
 	</script>
 </body>
 </html>

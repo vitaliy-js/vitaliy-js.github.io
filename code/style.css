@@ -279,7 +279,7 @@ input:focus {
 .test-wrap {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     margin-top: 15px;
 }
 .test h3 {
@@ -295,8 +295,9 @@ input:focus {
 }
 .test-list label {
     position: relative;
+    display: block;
+    margin-bottom: 15px;
     padding-left: 40px;
-    line-height: 2.2;
     cursor: pointer;
 }
 .test-list label::before {
@@ -362,9 +363,6 @@ input:focus {
 .practice-content {
     min-height: 85vh;
 }
-.practice-content .scroll-top {
-    display: none;
-}
 .practice-wrap {
     display: flex;
     justify-content: space-around;
@@ -380,57 +378,22 @@ input:focus {
 .practice-wrap code {
     display: block;
     margin: 10px auto 20px;
-    font: 400 19px 'Open Sans', Arial, sans-serif;
+    font: 400 17px 'Open Sans', Arial, sans-serif;
 }
-.practice-form>span {    
+.practice-task>span {    
     font-size: 18px;
 }
-.practice-form label {
-    display: block;
-    margin: 25px 0;
-    color: var(--main-color);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    text-align: left;
-}
-.practice-form button {
+.practice-task button {
     width: 100%;
-}
-.practice-example {
-    position: relative;
-    min-height: 80px;
-    font-size: 20px;
-    font-weight: 700;
-}
-.practice-error {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    display: none;
-    width: 290px;
-    padding: 5px 5px 5px 10px;
-    border: 1px solid var(--err-color);
-    border-radius: 4px;
-    color: var(--err-color);
-    font-size: 16px;
-    background-color: #fdf0f0;
-    transform: translateX(-50%);
-}
-.practice-error::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 5px;
-    width: 17px;
-    height: 17px;
-    background: url(img/alert.svg) 50%/100% no-repeat;
-    transform: translateY(-50%);
 }
 .practice-drag {
     position: relative;
     flex-direction: column;
     align-items: center;
+}
+.practice-drag .header-text {
+    max-width: 80%;
+    padding-right: 40px;
 }
 .practice-drag>span {
     position: absolute;
@@ -444,17 +407,18 @@ input:focus {
 }
 .drag-wrap span {
     display: inline-block;
-    width: 70px;
-    height: 30px;
+    min-width: 80px;
+    height: 27px;
     margin-top: 0 !important;
+    margin-bottom: 5px;
     border: 1px solid #eb582cd1;
     border-radius: 2px;
-    vertical-align: bottom;
+    vertical-align: middle;
     background-color: #fdf0f0;
 }
 .drag-wrap i {
-    display: block;
-    margin: 5px 0 5px 30px;
+    display: inline-block;
+    margin: 5px 0 5px 5px;
     font-style: normal;
 }
 .drag-panel {
@@ -470,21 +434,45 @@ input:focus {
     border-radius: 4px;
     background-color: #fdf0f0;
 }
+.drag-panel-empty {
+    position: relative;
+    padding-bottom: 32px;
+    border-color: var(--err-color);
+}
+.drag-panel-empty::after {
+    position: absolute;
+    content: 'Выберите значение';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--err-color);
+}
 .drag-panel b,
 .drag-wrap b {
     display: block;
-    min-width: 70px;
+    min-width: 80px;
     max-height: 28px;
     padding: 3px;
     border-radius: 2px;
     color: #fafafa;
+    font-size: 16px;
     line-height: 1.2;
     text-align: center;
     background-color: var(--main-color);
     cursor: grab;
 }
+.drag-wrap b[draggable="false"] {
+    cursor: default;
+}
 .drag-wrap .dragging {
     border: 2px dashed var(--main-color);
+}
+.drag-panel b.drag-panel-checked {
+    background-color: #9f02c6;
 }
 .practice-btn-wrap {
     display: flex;
@@ -609,7 +597,7 @@ input:focus {
     }
     .sidebar,
     .header-text,
-    .best-result {
+    .header-result {
         display: none;
     }
     .main-test .content h2 {
@@ -622,8 +610,42 @@ input:focus {
         width: 100%;
         margin-top: 20px;
     }
+    .content {
+        padding: 5px 10px;
+    }
+    .test-wrap {
+        gap: 0;
+    }
+    .test-list label {
+        padding-left: 22px;
+    }
+    .test-list label::before {
+        left: 0;
+    }
+    .test-list input:checked+span::after {
+        left: 4px;
+    }
+    .practice-drag .header-text,
+    .practice-content .header-text {
+        display: block;
+    }
+    .practice-drag .header-text {
+        max-width: 100%;
+        padding: 0;
+    }
+    .practice-drag {
+        padding-bottom: 25px;
+    }
+    .practice-drag>span {
+        top: auto;
+        bottom: 0;
+        right: 0;
+    }
 }
 @media (max-width: 425px) {
+    .header-result {
+        display: none;
+    }
     .content {
         padding: 5px 10px;
     }
@@ -636,8 +658,17 @@ input:focus {
     .test-btn {
         margin-top: 15px;
     }
-    .practice-form>span {
+    .practice-content {
+        padding: 5px;
+    }
+    .practice-task>span {
         font-size: 17px;
+    }
+    .practice-drag .header-text {
+        font-size: 16px;
+    }
+    .drag-panel {
+        width: 100%;
     }
 }
 

@@ -30,7 +30,9 @@ const createPage = type => {
             </div>
         </div>
     </main>
-    <a href="#header" class="scroll-top"></a>
+    ${(type !== 'practice') ?
+    `<a href="#header" class="scroll-top"></a>
+    ` : ''}
     <script type="module" src="code/scripts/index.js"></script>`;
 }
 
@@ -42,7 +44,7 @@ const createContent = () => {
             <div class="lesson" id="lesson-${i+1}">
             <h3>${i+1}. ${data[i].lesson}</h3>
             <ol class="lesson-list">
-                ${(i !== 0) ? '' : '<li class="video-link"><a href="#" target="_blank">Вступление</a></li>'}
+                ${(i !== 0) ? '' : '<li class="video-link"><a href="https://youtu.be/lkYcHIByZAI" target="_blank">Вступление</a></li>'}
                 <li class="video-link"><a href="${data[i].list.mainVideo}" target="_blank">Ссылка на урок</a></li>
                 <li class="book-link"><a href="${data[i].list.materials}">Материалы</a></li>
                 <li class="test-link"><a href="/test.html?id=${i+1}">Тест</a></li>
