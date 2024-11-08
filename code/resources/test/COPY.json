@@ -1,0 +1,46 @@
+{
+    "id": 7,
+    "title": "Работа с DOM",
+    "test": [
+        {
+            "question": "?",
+            "answer": ["preventDefault","stopPropagation","remove"],
+            "correct": 1
+        },
+        {
+            "question": "?",
+            "answer": ["stopPropagation","log","querySelector","addEventListener"],
+            "correct": 3
+        },
+        {
+            "question": "?",
+            "answer": ["focus","input","blur"],
+            "correct": 1
+        },
+        {
+            "question": "?",
+            "answer": ["mousemove","hover","mouseover","mousedown"],
+            "correct": 0
+        },
+        {
+            "question": "?",
+            "answer": ["event","html","document.body", "document"],
+            "correct": 3
+        },
+        {
+            "question": "?",
+            "answer": ["input","change","focus","blur","click"],
+            "correct": 1
+        },
+        {
+            "question": "?",
+            "answer": ["1","2","10","Неограниченное количество"],
+            "correct": 3
+        },
+        {
+            "question": "?",
+            "answer": ["btn.onclick = console.log('Hi');","btn.addEventListener('click', () => console.log('Hi'));","btn.click = console.log('Hi');","btn.addEventListener('click', function() {console.log('Hi'));}"],
+            "correct": 2
+        }
+    ]
+}  

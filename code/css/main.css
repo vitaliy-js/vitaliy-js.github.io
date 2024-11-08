@@ -1,0 +1,99 @@
+/* Header */
+.header-text {
+    line-height: 1.5;
+    text-align: center;
+}
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 10px;
+}
+.sidebar h2 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.sidebar li {
+    margin-bottom: 5px;
+}
+.sidebar a:hover,
+.lesson a:hover {
+    color: var(--main-color);
+}
+/* Content */
+.content {
+    width: 100%;
+    padding: 15px 20px;   
+}
+.content h2 {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.lesson {
+    position: relative;
+    padding-bottom: 30px;
+}
+.lesson:last-child {
+    padding-bottom: 15px;
+}
+.lesson::after {
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--font-color);
+    opacity: 0.3;
+}
+.lesson:last-child::after {
+    display: none;
+}
+.lesson h3 {
+    margin-bottom: 7px;
+    font-size: 1.05rem;
+}
+.lesson li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 22px;
+}
+.lesson li::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+.lesson .video::before {
+    background: url(../img/youtube.svg) 50%/16px no-repeat;
+}
+.lesson .materials::before {
+    background: url(../img/book.svg) 50%/18px no-repeat;
+}
+.lesson .test::before {
+    background: url(../img/test.svg) 50%/cover no-repeat;
+}
+.lesson .practice::before {
+    background: url(../img/ball.svg) 50%/cover no-repeat;
+}
+.lesson .challenge::before {
+    background: url(../img/clock.svg) 50%/19px no-repeat;
+}
+.lesson .article::before {
+    background: url(../img/article.svg) 50%/20px no-repeat;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .sidebar,
+    .header-text {
+        display: none;
+    }
+    .content {
+        padding: 5px 10px;
+    }
+}
