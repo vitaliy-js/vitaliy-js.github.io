@@ -1,0 +1,46 @@
+{
+    "id": 14,
+    "title": "Работа с localStorage",
+    "test": [
+        {
+            "question": "Какое свойство позволяет хранить данные в браузере без ограничения по времени?",
+            "answer": ["localStorage","sessionStorage","cookie"],
+            "correct": 0
+        },
+        {
+            "question": "В localStorage находится ключ num со значением 2. Что вернёт следующий код: typeof localStorage.getItem('num')?",
+            "answer": ["string","number","boolean","null","undefined"],
+            "correct": 0
+        },
+        {
+            "question": "Что вернёт JavaScript, если обратиться к несуществующему ключу с помощью метода getItem?",
+            "answer": ["-1","undefined","''","null","Ошибка"],
+            "correct": 3
+        },
+        {
+            "question": "Какое свойство позволяет хранить данные в браузере до закрытия текущей вкладки?",
+            "answer": ["localStorage","sessionStorage","cookie"],
+            "correct": 1
+        },
+        {
+            "question": "Какое условие нужно указать в if, чтобы оно выполнилось при отсутствии ключа 'status'?",
+            "answer": ["if (!localStorage.getItem('status'))","if (localStorage.getItem('status'))","if (localStorage.setItem('status', false))"],
+            "correct": 0
+        },
+        {
+            "question": "С помощью чего можно записать данные в браузер с указанием срока их хранения?",
+            "answer": ["localStorage","sessionStorage","cookie"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод позволяет удалить данные из localStorage по ключу?",
+            "answer": ["clear","delete","setItem","removeItem"],
+            "correct": 3
+        },
+        {
+            "question": "Как посчитать количество элементов, хранящихся в localStorage?",
+            "answer": ["localStorage.key","localStorage.count","localStorage.length"],
+            "correct": 2
+        }
+    ]
+}  

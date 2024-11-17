@@ -1,0 +1,46 @@
+{
+    "id": 28,
+    "title": "Базовый HTML",
+    "test": [
+        {
+            "question": "Что такое HTML?",
+            "answer": ["Расширяемый язык разметки","Язык гипертекстовой разметки","Каскадная таблица стилей"],
+            "correct": 1
+        },
+        {
+            "question": "Какой элемент используется для создания маркированного списка?",
+            "answer": ["ul","ol","p"],
+            "correct": 0
+        },
+        {
+            "question": "Какой элемент используется для создания кнопки?",
+            "answer": ["form","ol","button"],
+            "correct": 2
+        },
+        {
+            "question": "Какой элемент используется для выделения текста жирным начертанием?",
+            "answer": ["span","b","i","p"],
+            "correct": 1
+        },
+        {
+            "question": "Какой атрибут является обязательными для img?",
+            "answer": ["src","href ","type"],
+            "correct": 0
+        },
+        {
+            "question": "Какое значение атрибута type у элемента input используется для скрытия символов?",
+            "answer": ["text","password","radio"],
+            "correct": 1
+        },
+        {
+            "question": "Какой элемент используется в качестве контейнера для различных HTML-элементов?",
+            "answer": ["ul","ol","form","div"],
+            "correct": 3
+        },
+        {
+            "question": "Какой из предложенных вариантов не содержит ошибки?",
+            "answer": ["&lt;a href=\"https://localhost\">Link&lt;/a&gt;","&lt;a src=\"https://localhost\">Link&lt;/a&gt;","&lt;img href=\"https://localhost\"&gt;Link&lt;/img&gt;"],
+            "correct": 0
+        }
+    ]
+}  

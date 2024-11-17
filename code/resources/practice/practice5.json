@@ -1,0 +1,24 @@
+{
+    "id": 5,
+    "title": "Работа с DOM",
+    "practice": [
+        {
+            "task": "Напишите код так, чтобы при нажатии на ul удалялся его последний дочерний элемент",
+            "code": "document.querySelector('ul').<span></span> ('click', (e) => { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>e</i>.<span></span>.<span></span> = <span></span>(); <br>});",
+            "answers": ["before","type","remove","target","children","parentElement","lastElementChild","addEventListener","replaceWith","beforeend","innerHTML"],
+            "correct": ["addEventListener","target","lastElementChild","remove"]
+        },
+        {
+            "task": "Напишите код, который при нажатии на кнопку добавляет элемент b с текстом Hi в конец body",
+            "code": "document.querySelector('<span></span>').<span></span> ('click', () => { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>document</i>.<span></span>.<span></span>('<span></span>', `&lt;<span></span>&gt; Hi &lt;/<span></span>&gt;`); <br>});",
+            "answers": ["b","querySelector","beforebegin","body","innerHTML","button","addEventListener","after","createElement","beforeend","closest","b","body","outerHTML","insertAdjacentHTML"],
+            "correct": ["button","addEventListener","body","insertAdjacentHTML","beforeend","b","b"]
+        },
+        {
+            "task": "Создайте элемент button с текстом Отправить, которому присвоен класс btn-main и который находится в состоянии disabled",
+            "code": "const btn = document.<span></span>('<span></span>');<br>btn.<span></span> = 'Отправить';<br>btn.<span></span>.<span></span>('<span></span>');<br>btn.disabled = <span></span>;",
+            "answers": ["button","remove","insertAdjacentHTML","btn","addEventListener","textContent","querySelector","true","createElement","classList","false","btn-main","add"],
+            "correct": ["createElement","button","textContent","classList","add","btn-main","true"]
+        }
+    ]
+}

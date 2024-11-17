@@ -1,0 +1,24 @@
+{
+    "id": 17,
+    "title": "Базовый CSS",
+    "practice": [
+        {
+            "task": "Разместите изображение с классом 'image' по центру страницы и задайте ему ширину 250px",
+            "code": "<span></span> {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: block;</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: 250px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: <span></span> <span></span>;<br>}",
+            "answers": ["#image","text-align","0","flex-start",".image","height","width","center","auto","top","background-position","justify-content","display"],
+            "correct": [".image","display","width","0","auto"]
+        },
+        {
+            "task": "Создайте флекс-контейнер для элемента с идентификатором section, в котором элементы выравниваются по центру как по горизонтали, так и по вертикали. Задайте расстояние между элементами 10px и настройте их перенос на новую строку при необходимости",
+            "code": "<span></span> {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;display: <span></span>;</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: center;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;align-items: <span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: wrap;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: 10px;<br>}",
+            "answers": ["position","id","center","flex-wrap",".section","justify-content","width","margin","auto","gap","flex","space-around","bottom","#section","absolute"],
+            "correct": ["#section","flex","justify-content","center","flex-wrap","gap"]
+        },
+        {
+            "task": "Добавьте псевдоэлемент before для элемента с классом 'box'. Задайте ему абсолютное позиционирование с отступами 5px сверху и слева, а также фон фиолетового цвета",
+            "code": "<span></span><span></span>before {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;position: <span></span>;</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: '';<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: <span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 40px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 40px;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: pink;<br>}",
+            "answers": ["content","background-position","center","::","left","absolute","10px","fixed","auto","gap",".box","background-color","relative","#box","5px",":"],
+            "correct": [".box","::","absolute","content","5px","left","background-color"]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "id": 30,
+    "title": "Базовый CSS",
+    "test": [
+        {
+            "question": "Что определяет CSS-свойство font-weight?",
+            "answer": ["Межстрочный интервал","Наклон шрифта","Толщина шрифта"],
+            "correct": 2
+        },
+        {
+            "question": "Как зафиксировать элемент в пределах области просмотра страницы?",
+            "answer": ["position: relative","position: absolute","position: fixed"],
+            "correct": 2
+        },
+        {
+            "question": "Какой псевдокласс позволяет получить доступ к элементу в контейнере по его позиции?",
+            "answer": ["hover","nth-child","focus"],
+            "correct": 1
+        },
+        {
+            "question": "Какой из вариантов записи свойства background-position содержит ошибку?",
+            "answer": ["background-position: center top","background-position: 5px 5px","background-position: 5 5"],
+            "correct": 2
+        },
+        {
+            "question": "Что из перечисленного относится к идентификатору?",
+            "answer": [".text-color","#title-main","button"],
+            "correct": 1
+        },
+        {
+            "question": "Какое свойство и его значение нужно использовать, чтобы флекс-элементы переносились на новую строку?",
+            "answer": ["flex-wrap: wrap","align-items: flex-end","justify-content: flex-start"],
+            "correct": 0
+        },
+        {
+            "question": "Какое свойство позволяет добавить внешний отступ?",
+            "answer": ["width","padding","margin","border"],
+            "correct": 2
+        },
+        {
+            "question": "Какое свойство-значение нужно написать, чтобы блочный элемент оказался по центру?",
+            "answer": ["line-height: 1","text-align: center","font-style: center","margin: 0 auto"],
+            "correct": 3
+        }
+    ]
+}  

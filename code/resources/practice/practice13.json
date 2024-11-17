@@ -1,0 +1,24 @@
+{
+    "id": 13,
+    "title": "Асинхронный JavaScript",
+    "practice": [
+        {
+            "task": "Объявите функцию, которая позволит получить данные от сервера в JSON-формате",
+            "code": "<span></span> getData() {<br>&nbsp;&nbsp;<i>const res = <span></span> <span></span>('http://localhost');</i><br>&nbsp;&nbsp;&nbsp;const data = <span></span>  res.<span></span>();<br>}",
+            "answers": ["catch","function","await","async function","fetch","await","body","json","application/json","method"],
+            "correct": ["async function","await","fetch","await","json"]
+        },
+        {
+            "task": "Напишите код, который удалит данные, используя path-параметр 'a3fe12a'",
+            "code": "<span></span> removeData() {<br>&nbsp;&nbsp;const res = <span></span> <span></span>('http://localhost/<span></span>/shop', {<span></span>: '<span></span>'});<br>}",
+            "answers": ["method","?id=a3fe12a","DELETE","await","fetch","a3fe12a","function","GET","async function","json","finally","body"],
+            "correct": ["async function","await","fetch","a3fe12a","method","DELETE"]
+        },
+        {
+            "task": "Объявите функцию, которая отправит данные формы регистрации на сервер в формате JSON",
+            "code": "<span></span> getData(obj) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<i>const res = await <span></span>('http://localhost', {<br>&nbsp;&nbsp;&nbsp;&nbsp;method: '<span></span>',<br>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>: {'<span></span>': 'application/json'},<br>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>:<span></span>(obj)<br>});</i><br>}",
+            "answers": ["GET","fetch","await","status","POST","Authorization","body","async function","Content-Type","new","function","JSON.stringify","DELETE","headers","JSON.parse"],
+            "correct": ["async function","fetch","POST","headers","Content-Type","body","JSON.stringify"]
+        }
+    ]
+}

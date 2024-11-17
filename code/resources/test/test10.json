@@ -1,0 +1,46 @@
+{
+    "id": 10,
+    "title": "Массивы",
+    "test": [
+        {
+            "question": "Что выведется в консоль при обращении к массиву const years = ['2020', '2021']: console.log(years[1])?",
+            "answer": ["2020","2021","undefined"],
+            "correct": 1
+        },
+        {
+            "question": "Что произойдёт при выполнении следующего цикла: for (let i = 0; i >= 0; i++)?",
+            "answer": ["Цикл не запустится","Будет запущена одна итерация","Будет запущен бесконечный цикл"],
+            "correct": 2
+        },
+        {
+            "question": "Как называется оператор, пропускающий текущую итерацию цикла?",
+            "answer": ["for","break","continue","return"],
+            "correct": 2
+        },
+        {
+            "question": "Вам нужно вызвать функцию из массива colors (const colors = ['blue', () => 'green']). Как правильно к ней обратиться?",
+            "answer": ["colors[0]","colors[1]","colors[0]()","colors[1]()","Функция не может быть внутри массива"],
+            "correct": 3
+        },
+        {
+            "question": "Какие операторы нельзя использовать в цикле for...of?",
+            "answer": ["break","continue","Нет правильного варианта"],
+            "correct": 2
+        },
+        {
+            "question": "В каком случае доступ к элементу многомерного массива написан корректно?",
+            "answer": ["arr[0][1]","arr[0]+[1]","arr[0]&&[1]","arr[0, 1]"],
+            "correct": 0
+        },
+        {
+            "question": "Как получить доступ к последнему элементу массива, используя свойство length?",
+            "answer": ["arr[arr.length]","arr[arr.length + 1]","arr[arr.length - 1]"],
+            "correct": 2
+        },
+        {
+            "question": "В разметке два элемента b: &lt;b&gt;Hi&lt;/b&gt &lt;b&gt;Bye&lt;/b&gt. Что вернётся при выполнении document.querySelectorAll('b')[1]?",
+            "answer": ["&lt;b&gt;Hi&lt;/b&gt","&lt;b&gt;Bye&lt;/b&gt","undefined"],
+            "correct": 1
+        }
+    ]
+}  

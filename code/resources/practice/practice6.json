@@ -1,0 +1,24 @@
+{
+    "id": 6,
+    "title": "Массивы",
+    "practice": [
+        {
+            "task": "Составьте строку I love JavaScript, используя только элементы массива arr: const arr = ['love&nbsp;', 'PHP', 'like&nbsp; ', 'Script', 'I&nbsp; ', 'Ruby', 'Java', 'He&nbsp; ']",
+            "code": "arr[<span></span>] + arr[<span></span>] + arr[<span></span>] + arr[<span></span>]",
+            "answers": ["0","1","2","3","4","5","6","7"],
+            "correct": ["4","0","6","3"]
+        },
+        {
+            "task": "Запустите цикл, который добавит знак процента к каждому числу в массиве numbers (const numbers = [25, 50, 75, 100]) и отобразит результат в консоли",
+            "code": "<span></span> (val <span></span> numbers) { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>val</i><span></span><span></span> '<span></span>'; <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>console.log(val);</i><br>}",
+            "answers": ["for","continue","break","=","==","+","==","++","--","%","of","i","length"],
+            "correct": ["for","of","+","=","%"]
+        },
+        {
+            "task": "Задайте синий цвет всем элементам li, кроме последнего",
+            "code": "const el = document.<span></span>('li');<br><span></span> (let i = <span></span>; i < el.length; i++) { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>if (i === el.<span></span> - <span></span>)</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;el[<span></span>].style.<span></span> = 'blue';<br>}",
+            "answers": ["querySelector","+","for","color","querySelectorAll","break","of","++","0","1","length","innerHTML","i","textContent"],
+            "correct": ["querySelectorAll","for","0","length","1","break","i","color"]
+        }
+    ]
+}

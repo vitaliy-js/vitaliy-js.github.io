@@ -1,0 +1,46 @@
+{
+    "id": 12,
+    "title": "Строковые данные",
+    "test": [
+        {
+            "question": "Как объединить значения двух констант: const j = 'J' и const s = 'S'?",
+            "answer": ["'${j}${s}'","`${j}${s}`","`${j}+${s}`"],
+            "correct": 1
+        },
+        {
+            "question": "Какое значение вернёт выражение 'starfish'.indexOf('s', 1)?",
+            "answer": ["0","6","7","-1"],
+            "correct": 1
+        },
+        {
+            "question": "Что выведет консоль в следующем примере: console.log('JS'[0])?",
+            "answer": ["J","S","undefined","null","Ошибка"],
+            "correct": 0
+        },
+        {
+            "question": "Как получить массив ['Таня', 'Вася'] из строки 'Таня,Вася'?",
+            "answer": ["'Таня,Вася'.split(',')","'Таня,Вася'.split()","'Таня,Вася'.join(',')","'Таня,Вася'.slice(',')"],
+            "correct": 0
+        },
+        {
+            "question": "Как написать условие if, которое выполнится, если строка 'Лёд' отсутствует в значении константы africa?",
+            "answer": ["if (africa.includes('Лёд'))","if (!africa.includes('Лёд'))", "if (africa === 'Лёд')"],
+            "correct": 1
+        },
+        {
+            "question": "Как называется метод, который заменяет все указанные значения в строке?",
+            "answer": ["substring","lastIndeOf","replace","replaceAll"],
+            "correct": 3
+        },
+        {
+            "question": "Как правильно записать строку 'I'm on duty today', чтобы избежать ошибки в JavaScript?",
+            "answer": ["'I\\'m on duty today'","'I/'m on duty today'","'I|'m on duty today'","'I'm on duty today'"],
+            "correct": 0
+        },
+        {
+            "question": "Как вырезать слово 'родилась' из строки в константе song: const song = 'В лесу родилась ёлочка'?",
+            "answer": ["song.substring(7, 14)","song.substring(7, 15)","song.substring(8, 14)","song.substring(8, 15)"],
+            "correct": 1
+        }
+    ]
+}  

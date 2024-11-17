@@ -1,0 +1,46 @@
+{
+    "id": 5,
+    "title": "События в JavaScript",
+    "test": [
+        {
+            "question": "Какое из перечисленных событий не относится к событиям мыши?",
+            "answer": ["dblclick","keyup","mouseup","contextmenu"],
+            "correct": 1
+        },
+        {
+            "question": "Как называется метод, который выполняет код в ответ на событие?",
+            "answer": ["stopPropagation","log","querySelector","addEventListener"],
+            "correct": 3
+        },
+        {
+            "question": "Какое событие используется для отправки формы при нажатии Enter или клике на кнопку?",
+            "answer": ["click","keydown","submit","form"],
+            "correct": 2
+        },
+        {
+            "question": "Какое событие запускает код, когда элемент теряет фокус?",
+            "answer": ["blur","focus","click","submit"],
+            "correct": 0
+        },
+        {
+            "question": "Что будет выведено в консоль при клике на элемент h1 в следующем коде: document.querySelector('h1') .addEventListener('click', (e) => console.log(e.target))?",
+            "answer": ["document","document.querySelector('h1')","window", "e.target"],
+            "correct": 1
+        },
+        {
+            "question": "Что возвращает свойство type?",
+            "answer": ["Имя события","Статус всплытия","Объект, запустивший событие","Данное свойство не существует"],
+            "correct": 0
+        },
+        {
+            "question": "Какое свойство объекта event нужно использовать, чтобы отловить нажатие левого Shift?",
+            "answer": ["type","key","target","code"],
+            "correct": 3
+        },
+        {
+            "question": "Что произойдёт, если одному и тому же элементу задать свойство onclick дважды в следующем порядке: btn.onclick = console.log('Hi'); btn.onclick = console.log('Bye')?",
+            "answer": ["Hi","Bye","btn","Будет возвращена ошибка"],
+            "correct": 1
+        }
+    ]
+}  

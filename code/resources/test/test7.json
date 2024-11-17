@@ -1,0 +1,46 @@
+{
+    "id": 7,
+    "title": "Работа с DOM",
+    "test": [
+        {
+            "question": "Какой метод позволяет удалить элемент из DOM?",
+            "answer": ["delete","prepend","remove","cloneNode"],
+            "correct": 2
+        },
+        {
+            "question": "Что произойдёт с элементом при выполнении метода replaceWith?",
+            "answer": ["Заменится на другой элемент","Удалится","Сместится вниз","Сместится вверх"],
+            "correct": 0
+        },
+        {
+            "question": "Какое значение параметра insertAdjacentHTML позволяет добавить элемент в конец выбранного элемента?",
+            "answer": ["before","after","afterend", "beforeend"],
+            "correct": 3
+        },
+        {
+            "question": "В HTML-разметке есть следующий код: &lt;p&gt;Hi&lt;/p&gt;. Что произойдёт, если выполнить код document.querySelector('p').innerHTML = `&lt;p&gt;Hi&lt;/p&gt;`?",
+            "answer": ["&lt;p&gt;Hi&lt;/p&gt;","&lt;p&gt;Hi&lt;/p&gt;&lt;p&gt;Hi&lt;/p&gt;","Ошибка, так как обратные кавычки в JS не используются"],
+            "correct": 0
+        },
+        {
+            "question": "Как называется метод, который позволяет создать HTML-элемент с заданным тегом?",
+            "answer": ["append","querySelector","createElement","closest"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод возвращает последний дочерний элемент?",
+            "answer": ["lastDaughter","parentElement","firstElementChild", "lastElementChild"],
+            "correct": 3
+        },
+        {
+            "question": "Вам нужно добавить элемент в конец родительского элемента. Какой метод подойдёт для этого?",
+            "answer": ["prepend","after","append","before","parentElement"],
+            "correct": 2
+        },
+        {
+            "question": "В разметке представлен следующий код: &lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;b&gt;Bye&lt;/b&gt;&lt;/body&gt;. Что вернётся при выполнении кода: document.body.children[1]?",
+            "answer": ["&lt;h1&gt;Hello&lt;/h1&gt;","&lt;b&gt;Bye&lt;/b&gt;","null"],
+            "correct": 1
+        }
+    ]
+}  

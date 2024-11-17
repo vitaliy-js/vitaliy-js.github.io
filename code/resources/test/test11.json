@@ -1,0 +1,46 @@
+{
+    "id": 11,
+    "title": "Строковые данные",
+    "test": [
+        {
+            "question": "Как заменить слово PHP на JS в строке const js = 'PHP is the best'?",
+            "answer": ["js.slice('JS', 'PHP')","js.replace('JS', 'PHP')","js.replace('PHP', 'JS')"],
+            "correct": 2
+        },
+        {
+            "question": "Какое значение вернёт следующий код: '1,2,3,4,5'.slice(-5)?",
+            "answer": ["'3,4,5'","'2,3,4,5'","'1,2,3,4,5'"],
+            "correct": 0
+        },
+        {
+            "question": "В каком случае результат будет равен true?",
+            "answer": ["'starship'.includes('ship', 4)","'starship'.includes('ship', 5)","'starship'.includes('ship', 6)"],
+            "correct": 0
+        },
+        {
+            "question": "В каком из примеров строка содержит ошибку?",
+            "answer": ["'JS'","\"JS\"","`JS`","JS"],
+            "correct": 3
+        },
+        {
+            "question": "Какая функция позволяет преобразовать значение в строку?",
+            "answer": ["substring","typeof","String"],
+            "correct": 2
+        },
+        {
+            "question": "Какое значение вернёт выражение 'Ëлка'.lastIndexOf('ё')?",
+            "answer": ["0","3","-1","undefined"],
+            "correct": 2
+        },
+        {
+            "question": "Как убрать пробелы в начале и конце строки ' Hi ' и перевести её в нижний регистр?",
+            "answer": ["' Hi '.toUpperCase().trim()","' Hi '.toLowerCase().trim()","' Hi '.toLowerCase().trim","' Hi '.toLowerCase.trim()","Нет правильного варианта"],
+            "correct": 1
+        },
+        {
+            "question": "Как с помощью метода join получить строку 'Таня+Вася' из массива const people = ['Таня', 'Вася']?",
+            "answer": ["people.join('+')","people.join(+)","people.join()","people.split()"],
+            "correct": 0
+        }
+    ]
+}  

@@ -1,0 +1,46 @@
+{
+    "id": 25,
+    "title": "Разное",
+    "test": [
+        {
+            "question": "Какой метод массива следует использовать, если нужно, чтобы каждый элемент соответствовал определённому условию?",
+            "answer": ["some","every","reduce","forEach"],
+            "correct": 1
+        },
+        {
+            "question": "Как выполняется сравнение значений в case при работе с инструкцией switch?",
+            "answer": ["=","==","===","!=","!=="],
+            "correct": 2
+        },
+        {
+            "question": "Какой объект предоставляет информацию о браузере?",
+            "answer": ["navigator","screen","location"],
+            "correct": 0
+        },
+        {
+            "question": "В разметке представлен блок шириной 100px, с padding 10px и border со всех сторон 2px. Какое значение будет у свойства offsetWidth для этого блока (box-sizing равен border-box)?",
+            "answer": ["88","90","98","100"],
+            "correct": 3
+        },
+        {
+            "question": "Какой метод позволит выполнить код многократно через определённый промежуток времени?",
+            "answer": ["setTimeout","setInterval","clearTimeout", "clearInterval"],
+            "correct": 1
+        },
+        {
+            "question": "Какой тип данных представляет уникальное значение?",
+            "answer": ["string","number","boolean","object","symbol"],
+            "correct": 4
+        },
+        {
+            "question": "Чему равен accumulator в методе reduce, если initialValue не задан?",
+            "answer": ["Первому элементу в массиве","undefined","null","[]"],
+            "correct": 0
+        },
+        {
+            "question": "В каком варианте тернарный оператор записан без ошибок?",
+            "answer": ["(item === 'hi') : text = 'hello' ? text = 'bye'","(item === 'hi') ? text = 'hello' : text = 'bye'","(item = hi) ? text = 'hello' : text = 'bye'"],
+            "correct": 1
+        }
+    ]
+}  

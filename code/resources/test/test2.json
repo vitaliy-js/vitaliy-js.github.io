@@ -1,0 +1,46 @@
+{
+    "id": 2,
+    "title": "Работа c элементами и атрибутами",
+    "test": [
+        {
+            "question": "Как получить доступ к элементу с классом 'header'?",
+            "answer": ["document.style('.header')","document.querySelector('.header')", "document.querySelector('header')", "document.classList('.header')"],
+            "correct": 1
+        },
+        {
+            "question": "Какое свойство предоставляет доступ к тексту внутри элемента?",
+            "answer": ["log","style", "text", "textContent"],
+            "correct": 3
+        },
+        {
+            "question": "Какое свойство позволяет изменять CSS-стили элемента?",
+            "answer": ["src","style", "textContent"],
+            "correct": 1
+        },
+        {
+            "question": "Вам нужно изменить размер шрифта для элемента в переменной car. Какой вариант написан верно?",
+            "answer": ["car.style.fontSize","car.style.font-size", "car.style.textContent"],
+            "correct": 0
+        },
+        {
+            "question": "Как перевести константу button в состояние disabled?",
+            "answer": ["button.disabled = true","button.disabled", "button.disabled = 'yes'"],
+            "correct": 0
+        },
+        {
+            "question": "В каком из вариантов класс добавлен корректно?",
+            "answer": ["box.classList.add(.bg-blue)","box.classList.add('.bg-blue')", "box.classList.add('bg-blue')"],
+            "correct": 2
+        },
+        {
+            "question": "Как правильно изменить placeholder для константы input?",
+            "answer": ["input.placeholder = Hello","input.placeholder = 'Hello'", "Изменить значение атрибута в константе невозможно"],
+            "correct": 1
+        },
+        {
+            "question": "Как удалить класс 'bg-green' у элемента?",
+            "answer": ["box.classList.remove('bg-blue')","box.classList.remove('bg-green')", "box.classList.add('bg-green')"],
+            "correct": 1
+        }
+    ]
+}  

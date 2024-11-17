@@ -1,0 +1,104 @@
+.content {
+    width: 100%;
+    padding: 20px 25px;
+}
+.content h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.content b {
+    color: var(--main-color);
+}
+.content img {
+    height: 200px;
+    border: 1px solid #8c8c8c;
+    border-radius: 8px;
+    background-color: #ffcfc0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.img-right {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+.img-left {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.content ul {
+    margin-bottom: 15px;
+}
+.content li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+.content li::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/check-mark.svg) 50%/100% no-repeat;
+    transform: translateY(-50%);
+}
+.content li:last-child {
+    margin-bottom: 0;
+}
+.content-box {
+    margin: 25px 0;
+}
+.content-box h3 {
+    margin-bottom: 10px;
+    color: #3d8e68;
+}
+.content-box a {
+    color: #416efb;
+    font-weight: 700;
+}
+.content-box a:hover {
+    color: #3258d0;
+}
+img.img-about-main {
+    width: 360px;
+}
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    .img-about-main {
+        width: auto;
+        height: 5%;
+    }
+    .img-right {
+        margin: 5px 0 5px 15px;
+    }
+    .img-left {
+        margin: 5px 15px 5px 0;
+    }
+}
+@media (max-width: 425px) {
+    .content p,
+    .content ul {
+        margin-bottom: 10px;
+    }
+    .content-box h3 {
+        margin-bottom: 5px;
+    }
+    .content img {
+        width: 37%;
+        height: auto;
+    }
+    img.img-about-main {
+        width: 49%;
+    }
+}

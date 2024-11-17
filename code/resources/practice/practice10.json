@@ -1,0 +1,24 @@
+{
+    "id": 10,
+    "title": "Методы массивов",
+    "practice": [
+        {
+            "task": "Добавьте значения '2021' и '2022' в массив years (const years = ['2020', '2023', '2024']), чтобы они следовали за '2020'",
+            "code": "years.<span></span>(<span></span>, <span></span>, '2021','2022');",
+            "answers": ["push","splice","2","unshift","0","concat","1","shift","map","slice"],
+            "correct": ["splice","1","0"]
+        },
+        {
+            "task": "Из двухмерного массива teams (const teams = [['Ajax', 'nl'], ['Liverpool', 'en'], ['Chelsea', 'en']]) получите массив команд, у которых в первом индексе представлено значение 'en'. Отсортируйте этот список по именам команд.",
+            "code": "&nbsp;const arr = teams.<span></span>((item) => <span></span>[<span></span>] <span></span> 'en');<br><i>arr.<span></span>();</i>",
+            "answers": ["find","0","+","item","map","!==","concat","1","filter","===","index","sort"],
+            "correct": ["filter","item","1","===","sort"]
+        },
+        {
+            "task": "Установите для каждого элемента li фон розового цвета (pink). При этом второй элемент li должен быть окрашен в синий цвет (blue)",
+            "code": "document.<span></span>('li').<span></span>((el, index) => { <br><i>&nbsp;&nbsp;&nbsp;&nbsp;if (<span></span> !== <span></span>) { </i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>.style.backgroundColor = 'pink';<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>.style.backgroundColor = 'blue';<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>});",
+            "answers": ["0","map","querySelector","el","index","querySelectorAll","item","forEach","concat","1","shift","map","el","index","2"],
+            "correct": ["querySelectorAll","forEach","index","1","el","el"]
+        }
+    ]
+}

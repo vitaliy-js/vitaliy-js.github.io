@@ -1,0 +1,46 @@
+{
+    "id": 6,
+    "title": "События в JavaScript",
+    "test": [
+        {
+            "question": "Как называется метод, предотвращающий всплытие/погружение события?",
+            "answer": ["preventDefault","stopPropagation","remove"],
+            "correct": 1
+        },
+        {
+            "question": "Какое событие запускается при клике правой кнопкой мыши?",
+            "answer": ["keydown","change","click","contextmenu"],
+            "correct": 3
+        },
+        {
+            "question": "Для какого из предложенных событий будет доступно делегирование?",
+            "answer": ["focus","input","blur"],
+            "correct": 1
+        },
+        {
+            "question": "Какое событие запускается при перемещении курсора на элементе?",
+            "answer": ["mousemove","hover","keyup","mousedown"],
+            "correct": 0
+        },
+        {
+            "question": "Как называется объект, который позволяет получить доступ ко всей HTML-разметке?",
+            "answer": ["event","html","document.body", "document"],
+            "correct": 3
+        },
+        {
+            "question": "Какое событие обычно используется при переключении радиокнопок или чекбоксов?",
+            "answer": ["input","change","focus","blur","click"],
+            "correct": 1
+        },
+        {
+            "question": "Сколько обработчиков событий можно назначить для одного элемента с помощью addEventListener?",
+            "answer": ["1","2","10","Неограниченное количество"],
+            "correct": 3
+        },
+        {
+            "question": "В каком случае обработчик события прописан неверно?",
+            "answer": ["btn.onclick = console.log('Hi');","btn.addEventListener('click', () => console.log('Hi'));","btn.addEventListener('onclick', () => console.log('Hi'));","btn.addEventListener('click', function() {console.log('Hi');});"],
+            "correct": 2
+        }
+    ]
+}  

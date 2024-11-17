@@ -1,0 +1,24 @@
+{
+    "id": 16,
+    "title": "Базовый HTML",
+    "practice": [
+        {
+            "task": "Добавьте изображение с именем 'hello.png' в разметку, установив его ширину в 250 пикселей, и добавьте описание с текстом 'Say hello'",
+            "code": "&lt;<span></span> <span></span>=\"hello.png\" <span></span>=\"250px\" <span></span>=\"Say hello\"&gt;",
+            "answers": ["a","src","href","name","img","placeholder","width","height","label","alt","type","span"],
+            "correct": ["img","src","width","alt"]
+        },
+        {
+            "task": "Создайте блок, содержащий заголовок третьего уровня с текстом 'Полезная ссылка' и ссылку с текстом 'Ссылка', ведущую на страницу http://localhost",
+            "code": "&lt;<span></span>&gt;<br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span></span>&gt;Полезная ссылка&lt;<span></span>&gt;</i><br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span></span> <span></span>=\"http://localhost\"&gt;Ссылка&lt;<span></span>&gt;</i><br><i>&lt;<span></span>&gt;</i>",
+            "answers": ["a","for","href","div","/p","placeholder","h3","name","h1","alt","/div","input","/a","/h1","/h3","p"],
+            "correct": ["div","h3","/h3","a","href","/a","/div"]
+        },
+        {
+            "task": "Напишите форму для запроса на восстановление пароля, включающую поле для ввода пароля с подсказкой 'Password' и кнопку с текстом 'Отправить'",
+            "code": "&nbsp;&lt;<span></span>&gt;<br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span></span> type=\"<span></span>\" <span></span>=\"Password\"&gt;<br><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span></span>&gt;Отправить&lt;<span></span>&gt;</i><br><i>&lt;<span></span>&gt;</i>",
+            "answers": ["div","src","form","input","/textarea","label","text","/button","placeholder","/form","password","/div","/label","textarea","button"],
+            "correct": ["form","input","password","placeholder","button","/button","/form"]
+        }
+    ]
+}

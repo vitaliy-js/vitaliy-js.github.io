@@ -1,0 +1,46 @@
+{
+    "id": 15,
+    "title": "Методы массивов",
+    "test": [
+        {
+            "question": "Как удалить один элемент с индексом 2 из массива tasks?",
+            "answer": ["tasks.splice(0, 2)","tasks.splice(2, 0)","tasks.splice(2, 1)","tasks.splice(2, 2)"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод не изменяет исходный массив?",
+            "answer": ["slice","sort","push","unshift"],
+            "correct": 0
+        },
+        {
+            "question": "Что вернёт метод includes, если указанного значения в массиве нет?",
+            "answer": ["null","-1","undefined","false"],
+            "correct": 3
+        },
+        {
+            "question": "Как называется метод, который изменяет порядок элементов в массиве на обратный?",
+            "answer": ["sort","map","reverse","split","splice"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод создаёт новый массив, перебирая каждый элемент исходного массива?",
+            "answer": ["map","forEach","find", "includes"],
+            "correct": 0
+        },
+        {
+            "question": "Как добавить функцию getSong в конец массива songs?",
+            "answer": ["songs.unshift(getSong)","songs.unshift(getSong())","songs.push(getSong)","songs.push(getSong())"],
+            "correct": 3
+        },
+        {
+            "question": "Какой метод возвращает первое найденное значение, которое соответствует указанному условию?",
+            "answer": ["filter","find","includes","map"],
+            "correct": 1
+        },
+        {
+            "question": "Что будет содержать константа animals после выполнения следующего кода: const animals = ['cat', 'dog', 'fish'].slice(-1)?",
+            "answer": ["['cat']","['dog']","['fish']","['dog', 'fish']"],
+            "correct": 2
+        }
+    ]
+}  

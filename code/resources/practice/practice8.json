@@ -1,0 +1,24 @@
+{
+    "id": 8,
+    "title": "Методы чисел",
+    "practice": [
+        {
+            "task": "Увеличьте значение '20px' вдвое и присвойте его в качестве ширины для константы img",
+            "code": "const width = <span></span>('20px') * 2;<br>img.style.<span></span> = <span></span>${width}px<span></span>;",
+            "answers": ["parseInt","toFixed","Number","`","height","`","width","'","Math.pow","'","isInteger"],
+            "correct": ["parseInt","width","`","`"]
+        },
+        {
+            "task": "Напишите код, с помощью которого можно будет получить случайное значение из массива arr",
+            "code": "&nbsp;const arr = ['cat', 'dog', 'fish'];<br><i>const random = arr[<span></span>.<span></span>(<span></span>.<span></span>() * arr.<span></span>)];</i>",
+            "answers": ["round","random","max","Number","Math","parseFloat","Math","length","pow","floor","Number"],
+            "correct": ["Math","floor","Math","random","length"]
+        },
+        {
+            "task": "Выполните проверку на наличие целого числа в массиве const arr = [5.25, 3.5, 5, 10.9]",
+            "code": "<span></span> (let i = 0, i < arr.<span></span>; i++) { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>if (<span></span>.<span></span>(arr[i]))</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(true);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+            "answers": ["Number","return","Math.round","isInteger","isNaN","+","length","break","Math.pow","parseInt","!","for"],
+            "correct": ["for","length","Number","isInteger","break"]
+        }
+    ]
+}

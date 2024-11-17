@@ -1,0 +1,46 @@
+{
+    "id": 27,
+    "title": "Базовый HTML",
+    "test": [
+        {
+            "question": "Какой элемент используется для установки курсивного начертания шрифта?",
+            "answer": ["span","b","i","p"],
+            "correct": 2
+        },
+        {
+            "question": "Какой тип элемента input позволяет выбрать сразу несколько значений?",
+            "answer": ["radio","text","checkbox"],
+            "correct": 2
+        },
+        {
+            "question": "В каком варианте элемент p написан верно?",
+            "answer": ["&lt;p>Lorem ipsum&lt;/p&gt;","&lt;p&gt;Lorem ipsum&lt;p&gt;","&lt;/p&gt;Lorem ipsum&lt;/p&gt;"],
+            "correct": 0
+        },
+        {
+            "question": "Какой элемент формы предназначен для многострочного ввода текста?",
+            "answer": ["p","input","textarea"],
+            "correct": 2
+        },
+        {
+            "question": "Какой из предложенных вариантов содержит ошибку?",
+            "answer": ["&lt;textarea placeholder=\"Comment\"&gt;","&lt;textarea placeholder=\"Comment\"&gt;&lt;/textarea&gt;","&lt;textarea&gt;&lt;/textarea&gt;"],
+            "correct": 0
+        },
+        {
+            "question": "Какой атрибут используется для создания подсказки внутри поля формы?",
+            "answer": ["name","for","placeholder"],
+            "correct": 2
+        },
+        {
+            "question": "Какой атрибут позволяет задать текстовую информацию об изображении?",
+            "answer": ["src","href","alt","type"],
+            "correct": 2
+        },
+        {
+            "question": "Какой элемент отвечает за создание заголовка первого уровня?",
+            "answer": ["title","h1","header"],
+            "correct": 1
+        }
+    ]
+}  

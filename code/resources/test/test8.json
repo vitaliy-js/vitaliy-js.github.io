@@ -1,0 +1,46 @@
+{
+    "id": 8,
+    "title": "Работа с DOM",
+    "test": [
+        {
+            "question": "В каком из примеров код написан корректно?",
+            "answer": ["document.createElement('&lt;p&gt;Hi&lt;/p&gt;')","document.createElement('&lt;p&gt;')","document.createElement('p')"],
+            "correct": 2
+        },
+        {
+            "question": "Какое свойство позволяет установить HTML-содержимое внутри элемента, включая сам элемент?",
+            "answer": ["innerHTML","outerHTML","insertAdjacentHTML","cloneNode"],
+            "correct": 1
+        },
+        {
+            "question": "В разметке следующий код: &lt;p&gt;Hello&lt;/p&gt;. Что произойдёт, если выполнить код document.querySelector('p').innerHTML += `&lt;p&gt;Hello&lt;/p&gt;`?",
+            "answer": ["&lt;p&gt;Hello&lt;/p&gt;","&lt;p&gt;Hello&lt;/p&gt;&lt;p&gt;Hello&lt;/p&gt;","Ошибка, так как += не используется в JS"],
+            "correct": 1
+        },
+        {
+            "question": "Что будет возвращаться при выполнении кода document.body.parentElement?",
+            "answer": ["Содержимое document","Содержимое body","null","Ошибка, так как обращение к body прописано не через querySelector"],
+            "correct": 0
+        },
+        {
+            "question": "Элемент &lt;a&gt; добавлен в константу link. Какой элемент будет найден при выполнении команды link.closest('body')?",
+            "answer": ["body","a","html","Ошибка"],
+            "correct": 0
+        },
+        {
+            "question": "Какой метод лучше использовать, если нужно добавить блок, состоящий из нескольких HTML-элементов?",
+            "answer": ["createElement","insertAdjacentHTML","addEventListener","querySelector"],
+            "correct": 1
+        },
+        {
+            "question": "В разметке нет элемента &lt;h6&gt;. Что будет выведено в консоль, если в неё добавить document.querySelector('h6')?",
+            "answer": ["boolean","undefined","null","document.querySelector('h6')","Ошибка"],
+            "correct": 2
+        },
+        {
+            "question": "Константы из элементов h1 и b находятся на одном уровне в родительском элементе &lt;div&gt;. Куда будет добавлен элемент b, если выполнить код b.before(h1)?",
+            "answer": ["Перед h1","После h1","Перед div","После div"],
+            "correct": 0
+        }
+    ]
+}  

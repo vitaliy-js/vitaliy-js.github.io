@@ -1,0 +1,24 @@
+{
+    "id": 7,
+    "title": "Строковые данные",
+    "practice": [
+        {
+            "task": "Клиент отправил значение: const str = ' Happy.png '. Преобразуйте его в строку 'img/happy.png'",
+            "code": "const img = `img/ <span></span> <span></span> str.<span></span>().trim() <span></span>`;",
+            "answers": ["split","join","*","slice","}","+","$","toLowerCase","replace","toUpperCase","{"],
+            "correct": ["$","{","toLowerCase","}"]
+        },
+        {
+            "task": "Напишите код с условием: если значение src у константы img содержит слово 'happy', тогда константа text должна содержать строку 'I'm happy'",
+            "code": "if (img.<span></span>.<span></span>('happy'))</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;text.<span></span> = 'I<span></span>'m happy';<br>}",
+            "answers": ["querySelector","textContent","indexOf","===","replace","src","/","+","\\","join","includes","length","trim"],
+            "correct": ["src","includes","textContent","\\"]
+        },
+        {
+            "task": "Вырежьте значение '1D-q2-I4' из const url = 'https://www.test.com/1D-q2-I4', преобразовав его в нижний регистр и убрав дефисы, чтобы получилось '1dq2i4'",
+            "code": "const val = url.<span></span>(<span></span>).<span></span>('-',<span></span>).<span></span>();",
+            "answers": ["substring","slice","-5","''","0","-8","toLowerCase","replace","toUpperCase","replaceAll","'+'","includes","5"],
+            "correct": ["slice","-8","replaceAll","''","toLowerCase"]
+        }
+    ]
+}

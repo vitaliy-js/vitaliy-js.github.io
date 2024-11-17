@@ -1,0 +1,24 @@
+{
+    "id": 11,
+    "title": "Объекты",
+    "practice": [
+        {
+            "task": "В объекте champion ({country: 'Италия', century: 21}) измените значение country на 'Испания', удалите свойство century и добавьте свойство year со значением '2024'",
+            "code": "<span></span>.<span></span> = 'Испания';<br><span></span> <span></span>.<span></span>;<br><span></span>.year = '2024';",
+            "answers": ["champion","new","country","this","champion","century","delete","champion","apply","country","key","century"],
+            "correct": ["champion","country","delete","champion","century","champion"]
+        },
+        {
+            "task": "Создайте объект cat с помощью класса Pet и добавьте ему свойство {name: 'Барсик'}",
+            "code": "<span></span> Pet {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;<span></span> (name) {</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>.name = name;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;}<br><i>const cat = <span></span> Pet('Барсик');</i>",
+            "answers": ["this","call","for","key","new","Object","delete","values","in","class","constructor","apply"],
+            "correct": ["class","constructor","this","new"]
+        },
+        {
+            "task": "С помощью цикла добавьте в конец массива arr все значения объекта obj, кроме тех, которые содержат 'old'",
+            "code": "<span></span> (let key <span></span> obj) {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;if (!<span></span>[<span></span>].<span></span>('old')) {</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr.<span></span>(<span></span>[<span></span>]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+            "answers": ["unshift","map","for","key","index","obj","push","item","forEach","concat","obj","in","includes","el","key","apply"],
+            "correct": ["for","in","obj","key","includes","push","obj","key"]
+        }
+    ]
+}

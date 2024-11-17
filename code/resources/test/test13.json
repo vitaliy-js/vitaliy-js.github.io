@@ -1,0 +1,56 @@
+{
+    "id": 13,
+    "title": "Методы чисел",
+    "test": [
+        {
+            "question": "Какой метод нужно применить, чтобы при округлении числа 7.25 получить 8?",
+            "answer": ["Math.floor","Math.ceil","Math.round","Math.trunc"],
+            "correct": 1
+        },
+        {
+            "question": "Что будет выведено в консоль, если выполнить следующий код: console.log(-1 / 0)?",
+            "answer": ["Ошибка","NaN","null","Infinity","-Infinity"],
+            "correct": 4
+        },
+        {
+            "question": "Что вернётся при выполнении следующего кода: console.log(+true)?",
+            "answer": ["true","false","0","1"],
+            "correct": 3
+        },
+        {
+            "question": "Как получить число из константы num, округлённое до сотых: const num = 36.186836?",
+            "answer": ["num.toFixed(2)","Number(num.toFixed(2))","num.parseFloat(2)","Number(num.parseFloat(2))"],
+            "correct": 1
+        },
+        {
+            "question": "Какое значение мы получим, если применим parseInt следующим образом: parseInt('+24 ℃')?",
+            "answer": ["+24","24","NaN","-1","Ошибка"],
+            "correct": 1
+        },
+        {
+            "question": "Какой метод возвращает true, если значение является целым числом?",
+            "answer": ["isInteger","parseInt","toFixed"],
+            "correct": 0
+        },
+        {
+            "question": "Что вернётся при выполнении следующего кода: console.log(1 * (1 + true))?",
+            "answer": ["1","2","NaN","Infinity","Ошибка"],
+            "correct": 1
+        },
+        {
+            "question": "Какая запись кода позволяет получить случайное целое число от 0 до 9 включительно?",
+            "answer": ["Math.floor(Math.random() * 10)","Math.ceil(Math.random() * 10)","Math.random() * 10"],
+            "correct": 0
+        },
+        {
+            "question": "Что будет выведено в консоль, если выполнить следующий код: console.log(5 - 'true')?",
+            "answer": ["4","undefined","NaN","Infinity","Ошибка"],
+            "correct": 2
+        },
+        {
+            "question": "С помощью какого метода можно возвести число в степень?",
+            "answer": ["Math.pow","Math.sqrt","Math.max","Math.min","Math.trunc"],
+            "correct": 0
+        }
+    ]
+}  

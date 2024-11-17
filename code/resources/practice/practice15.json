@@ -1,0 +1,24 @@
+{
+    "id": 15,
+    "title": "Разное",
+    "practice": [
+        {
+            "task": "Используя тернарный оператор, присвойте значение константе text в зависимости от условия: 'sun', если item равен 'day', и 'moon' для всех остальных случаев",
+            "code": "const text = (item<span></span>'day') <span></span> '<span></span>' <span></span> 'moon';",
+            "answers": ["!","=","sun","==","moon","|","===",":","!==","&&","day","?"],
+            "correct": ["===","?","sun",":"]
+        },
+        {
+            "task": "Найдите сумму всех элементов массива arr и прибавьте к результату 2",
+            "code": "const sum = arr.<span></span>((accumulator, <span></span>, index) => {<br><i>&nbsp;&nbsp;&nbsp;<span></span> <span></span> + item<br>}, <span></span>);",
+            "answers": ["every","break","accumulator","index","0","reduce","item","return","++","2","forEach"],
+            "correct": ["reduce","item","return","accumulator","2"]
+        },
+        {
+            "task": "Создайте обратный отсчёт в 1 секунду, начиная с 5. Отсчёт должен остановиться при достижении значения 0",
+            "code": "let counter = <span></span>;<br><i>const timer = <span></span>(() => {<br><i>&nbsp;&nbsp;&nbsp;&nbsp;counter<span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;text.textContent =  counter;<br>&nbsp;&nbsp;&nbsp;&nbsp;<i>if (counter === 0) {</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span>(<span></span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, <span></span>);",
+            "answers": ["1","6","timer","++","setInterval","5","clearInterval","--","setTimeout","counter","clearTimeout","0","1000","break","return"],
+            "correct": ["6","setInterval","--","clearInterval","timer","1000"]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "id": 22,
+    "title": "Асинхронный JavaScript",
+    "test": [
+        {
+            "question": "В каком случае выполнение асинхронной функции будет приостановлено, пока не будет получен ответ от промиса?",
+            "answer": ["const res = fetch()","const res = await fetch()","const res = new Promise(fetch())"],
+            "correct": 1
+        },
+        {
+            "question": "Что означает значение true в свойстве ok объекта Response?",
+            "answer": ["HTTP-код относится к группе 1xx","HTTP-код относится к группе 2xx","HTTP-код относится к группе 4xx"],
+            "correct": 1
+        },
+        {
+            "question": "Какая из функций не указана как асинхронная?",
+            "answer": ["function getData() {}","async function getData() {}","const getData = async () => {}"],
+            "correct": 0
+        },
+        {
+            "question": "В каких блоках полностью выполнится код, если в конструкции try...catch...finally ошибка не возникла?",
+            "answer": ["Только в try","В try и catch","В catch и finally","В try и finally"],
+            "correct": 3
+        },
+        {
+            "question": "Какой метод HTTP-запроса используется, если вызов fetch записан следующим образом: await fetch('http://localhost/shop')?",
+            "answer": ["GET","POST","PUT", "PATCH"],
+            "correct": 0
+        },
+        {
+            "question": "Что нужно указать в объекте headers, чтобы обозначить, что данные отправляются в формате JSON?",
+            "answer": ["Content-Type: 'application/json'","ContentType: 'application/json'","'Content-Type': 'application/json'"],
+            "correct": 2
+        },
+        {
+            "question": "Что возвращает асинхронная функция?",
+            "answer": ["Объект Date","Объект Promise","Объект Response"],
+            "correct": 1
+        },
+        {
+            "question": "Что выполняет метод json?",
+            "answer": ["Конвертирует JavaScript-объект в JSON-строку","Конвертирует JSON-строку в JavaScript-объект","Возвращает промис с телом ответа в формате JSON"],
+            "correct": 2
+        }
+    ]
+}  

@@ -1,0 +1,46 @@
+{
+    "id": 18,
+    "title": "Объекты",
+    "test": [
+        {
+            "question": "Что вернётся, если к объекту применить метод Object.entries?",
+            "answer": ["Массив из ключей","Массив из значений","Массив из ключей и значений"],
+            "correct": 2
+        },
+        {
+            "question": "Как получить доступ к значению в теле цикла, если условие записано следующим образом: for (let key in cars)?",
+            "answer": ["key","cars.key","cars[key]","cars['key']"],
+            "correct": 2
+        },
+        {
+            "question": "Что отобразится в консоли, если вызвать метод sights.showCity() из объекта const sights = { city: 'Madrid', showCity: () => this.city }?",
+            "answer": ["'Madrid'","undefined","null","Ошибка"],
+            "correct": 1
+        },
+        {
+            "question": "Как вызвать функцию getSum, которая является свойством объекта numbers?",
+            "answer": ["numbers.getSum","numbers.getSum()","new numbers.getSum()","getSum()"],
+            "correct": 1
+        },
+        {
+            "question": "Какой метод позволяет преобразовать JavaScript-объект в JSON-строку?",
+            "answer": ["JSON.stringify","JSON.parse","JSON.assign", "constructor"],
+            "correct": 0
+        },
+        {
+            "question": "Как создать объект obj с использованием функции-конструктора?",
+            "answer": ["const obj = {}","obj.call()","const obj = new Hobbies()"],
+            "correct": 2
+        },
+        {
+            "question": "Как добавить в существующий объект nature все свойства объекта trees?",
+            "answer": ["Object.assign(trees, nature)","Object.assign(nature, trees)","nature.entries(trees)","trees.hasOwnProperty('nature')"],
+            "correct": 1
+        },
+        {
+            "question": "Какой оператор позволяет удалить свойство из объекта?",
+            "answer": ["delete","remove","removeItem","clear"],
+            "correct": 0
+        }
+    ]
+}  

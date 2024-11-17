@@ -1,0 +1,46 @@
+{
+    "id": 4,
+    "title": "Функции и параметры",
+    "test": [
+        {
+            "question": "Какое ключевое слово используется для объявления функции?",
+            "answer": ["console","function","classList"],
+            "correct": 1
+        },
+        {
+            "question": "В каком варианте функция вызвана верно?",
+            "answer": ["getMessage()","getMessage","get Message()"],
+            "correct": 0
+        },
+        {
+            "question": "Сколько раз можно вызвать обычную функцию?",
+            "answer": ["1","2","3","Неограниченное количество раз"],
+            "correct": 3
+        },
+        {
+            "question": "Сколько параметров можно добавить в функцию?",
+            "answer": ["1","2","3","Неограниченное количество"],
+            "correct": 3
+        },
+        {
+            "question": "Какая функция объявлена без ошибки?",
+            "answer": ["function add-User() {}","function addUser(userName) {}","function addUser(user name) {}"],
+            "correct": 1
+        },
+        {
+            "question": "Если переменная объявлена без присвоения значения (let text), что будет выведено в консоли при выполнении console.log(text)?",
+            "answer": ["true","false","undefined","Будет возвращена ошибка"],
+            "correct": 2
+        },
+        {
+            "question": "Что вернёт функция sayHello(), если код будет написан в следующем порядке: sayHello(); function sayHello() { return 'Hello' }?",
+            "answer": ["Hello","false","true","Будет возвращена ошибка"],
+            "correct": 0
+        },
+        {
+            "question": "Что вернёт функция sayHello(), если код будет написан в следующем порядке: sayHello(); const sayHello = () => 'Hello'?",
+            "answer": ["Hello","false","true","Будет возвращена ошибка"],
+            "correct": 3
+        }
+    ]
+}  

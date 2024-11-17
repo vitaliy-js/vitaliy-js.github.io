@@ -1,0 +1,24 @@
+{
+    "id": 9,
+    "title": "Работа с localStorage",
+    "practice": [
+        {
+            "task": "Добавьте ключ year со значением '2000' в localStorage, если его там ещё нет",
+            "code": "if (<span></span><span></span>.<span></span>('year')) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><span></span>.<span></span>('year', '2000');</i><br>}",
+            "answers": ["localStorage","removeItem","setItem","!","length","?","getItem","clear","localStorage","cookie","document","!=="],
+            "correct": ["!","localStorage","getItem","localStorage","setItem"]
+        },
+        {
+            "task": "Увеличьте на 1 значение ключа age в localStorage, если оно изначально равно 18",
+            "code": "const sum = <span></span><span></span>.<span></span>('age') + 1;<br><i><span></span>.<span></span>('age', sum);</i>",
+            "answers": ["!","localStorage","+","document","localStorage","key","getItem","length","removeItem","setItem","cookie"],
+            "correct": ["+","localStorage","getItem","localStorage","setItem"]
+        },
+        {
+            "task": "Переберите все ключи в localStorage и выведите в консоль только те, значения которых содержат 'kg'",
+            "code": "for (let i = 0; i < <span></span>.<span></span>; i++) { <br><i>&nbsp;&nbsp;&nbsp;const key = <span></span>.<span></span>(i);</i><br>&nbsp;&nbsp;&nbsp;&nbsp;if (key.<span></span>('kg')) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(key);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+            "answers": ["localStorage","slice","setItem","indexOf","getItem","key","length","continue","localStorage","removeItem","includes"],
+            "correct": ["localStorage","length","localStorage","key","includes"]
+        }
+    ]
+}

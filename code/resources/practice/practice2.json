@@ -1,0 +1,24 @@
+{
+    "id": 2,
+    "title": "Ветвление: if - else if - else",
+    "practice": [
+        {
+            "task": "Сделайте так, чтобы переменная label была зелёного цвета с текстом paid внутри, если payment&nbsp;равен&nbsp;'completed'",
+            "code": "<span></span> (payment <span></span> 'completed') {<br>&nbsp;&nbsp;&nbsp;<i>label.style.color </i> <span></span> <span></span>;<br>&nbsp;&nbsp;&nbsp;<i>label.textContent </i> <span></span> <span></span>;<br>}",
+            "answers": ["if","else if","else","===","===","=","=","'green'","'red'","'paid'"],
+            "correct": ["if","===","=","'green'","=","'paid'"]
+        },
+        {
+            "task": "Переменная result должна равняться true для&nbsp;id&nbsp;=&nbsp;5. В противном случае result&nbsp;=&nbsp;false",
+            "code": "<span></span> (id <span></span> 5) {<br><i>&nbsp;&nbsp;result </i> <span></span> <span></span>;<br>} <span></span> {<br><i>&nbsp;&nbsp;result </i> <span></span> <span></span>; <br>}",
+            "answers": ["if","else if","else","===","===","true","false","=","="],
+            "correct": ["if","===","=","true","else","=","false"]
+        },
+        {
+            "task": "Создайте условие для предоставления скидки на проездной билет:<br> для младенцев (0-2 года) - 50%; для детей (3-11) - 25%; для взрослых (от 12) - 0%",
+            "code": "let discount;<br><span></span> (age <span></span> 3) {<br><i>&nbsp;&nbsp;discount = '50%';</i><br>} <span></span> (age <span></span> 12) {<br><i>&nbsp;&nbsp;discount = '25%';</i><br>} <span></span> {<br><i>&nbsp;&nbsp;discount = '0%';</i><br>}",
+            "answers": ["if","else if","else","===",">","<",">","<"],
+            "correct": ["if","<","else if","<","else"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": 12,
+    "title": "Дата и время",
+    "practice": [
+        {
+            "task": "Задайте время в формате Unix, увеличив текущее время на 1 час",
+            "code": "<span></span>.<span></span>() + (60*60*<span></span>)",
+            "answers": ["now","new","60","getHours","100","Date","setHours","parse","1000"],
+            "correct": ["Date","now","1000"]
+        },
+        {
+            "task": "Создайте объект Date с датой 29 февраля 2024 года в формате строки и временем ровно в полночь",
+            "code": "const date = <span></span> Date('<span></span>-<span></span>-<span></span>T<span></span>:<span></span>:00+01:00');",
+            "answers": ["00","01","getDate","02","29","getTime","01","2024","28","new","00","now","parse","23"],
+            "correct": ["new","2024","02","29","00","00"]
+        },
+        {
+            "task": "В константе val находится дата, полученная из календаря (input[type=\"date\"]). Создайте объект Date, используя значение val в формате 'January 1, 1970'",
+            "code": "const date = <span></span> <span></span>(val).<span></span>('<span></span>', {<span></span>: 'long'});",
+            "answers": ["en-GB","toLocaleTimeString","date","new","timeStyle","en-US","now","dateStyle","getFullYear","toLocaleDateString","Date","style"],
+            "correct": ["new","Date","toLocaleDateString","en-US","dateStyle"]
+        }
+    ]
+}

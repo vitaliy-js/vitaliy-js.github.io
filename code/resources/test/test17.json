@@ -1,0 +1,46 @@
+{
+    "id": 17,
+    "title": "Объекты",
+    "test": [
+        {
+            "question": "Какой метод позволяет проверить наличие свойства в объекте?",
+            "answer": ["hasOwnProperty","Object.assign","Object.keys","Object.values"],
+            "correct": 0
+        },
+        {
+            "question": "В каком варианте обращение к свойству объекта содержит ошибку?",
+            "answer": ["person.age","'person'.'age'","person['age']"],
+            "correct": 1
+        },
+        {
+            "question": "Что отобразится в консоли, если вызвать метод sights.showCity() из объекта const sights = {city: 'Madrid', showCity: function() { return this.city; } }?",
+            "answer": ["'Madrid'","undefined","null","Ошибка"],
+            "correct": 0
+        },
+        {
+            "question": "Какой тип данных JavaScript отсутствует в JSON?",
+            "answer": ["null","boolean","undefined","массив"],
+            "correct": 2
+        },
+        {
+            "question": "Как добавить новое свойство drink: 'milk' в объект dinner?",
+            "answer": ["drink = 'milk'","dinner.drink: 'milk'","dinner.drink = 'milk'", "drink['dinner'] = 'milk'"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод используется для создания нового экземпляра объекта в классе?",
+            "answer": ["Object.assign","constructor","new","Object.entries"],
+            "correct": 1
+        },
+        {
+            "question": "Что вернётся, если обратиться к несуществующему свойству объекта?",
+            "answer": ["Ошибка","null","undefined","this"],
+            "correct": 2
+        },
+        {
+            "question": "Какой метод позволяет преобразовать массив в объект?",
+            "answer": ["Object.fromEntries","Object.entries","apply","JSON.stringify","JSON.parse"],
+            "correct": 0
+        }
+    ]
+}  

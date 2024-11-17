@@ -1,0 +1,24 @@
+{
+    "id": 1,
+    "title": "Взаимодействие с HTML",
+    "practice": [
+        {
+            "task": "Объявите константу mainTitle для элемента h1 с текстом Hello",
+            "code": "<span></span> mainTitle = document.<span></span>('h1');<br>mainTitle.<span></span> = 'Hello';",
+            "answers": ["document","placeholder","let","querySelector","style","const","text","textContent","add"],
+            "correct": ["const","querySelector","textContent"]
+        },
+        {
+            "task": "Объявите константу input с placeholder Name и добавьте ей класс field",
+            "code": "<span></span> input = <span></span>.querySelector('input');<br>input.<span></span> = 'Name';<br>input.<span></span>.add = (<span></span>);",
+            "answers": ["'.field'","let","document","style","const","placeholder","add","querySelector","classList","type","'field'"],
+            "correct": ["const","document","placeholder","classList","'field'"]
+        },
+        {
+            "task": "Объявите переменную val со значением 5 и примените её для кнопки btn, установив состояние disabled и сделав фон кнопки синим",
+            "code": "<span></span> val = 5;<br>btn.textContent = <span></span>;<br>btn.<span></span> = <span></span>;<br>btn.<span></span>.<span></span> = 'blue';",
+            "answers": ["let","document","disabled","true","style","color","const","false","backgroundColor","enabled","val","btn","querySelector"],
+            "correct": ["let","val","disabled","true","style","backgroundColor"]
+        }
+    ]
+}

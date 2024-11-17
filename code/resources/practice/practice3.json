@@ -1,0 +1,24 @@
+{
+    "id": 3,
+    "title": "Функции и параметры",
+    "practice": [
+        {
+            "task": "Объявите функцию hideBlock, чтобы скрыть переменную box от пользователя",
+            "code": "<span></span> hideBlock<span></span> {<br>&nbsp;&nbsp;<i>&nbsp;&nbsp;box.style.display =  </i> '<span></span>';<br>}",
+            "answers": ["hide","=>","()",":)","block","none","function","==="],
+            "correct": ["function","()","none"]
+        },
+        {
+            "task": "Добавьте текст JS-уроки для HTML-элемента в константе title с помощью параметра text",
+            "code": "addText(<span></span>);<br> function addText(<span></span>) {<br>&nbsp;&nbsp;<i>&nbsp;&nbsp;title.</i><span></span> = <span></span>;<br>}",
+            "answers": ["JS-уроки","'JS-уроки'","function","text","text","textContent","style","if else"],
+            "correct": ["'JS-уроки'","text","textContent","text"]
+        },
+        {
+            "task": "Используйте параметр text в функции, чтобы показать сообщение 'Ошибка в возрасте', если длина значения константы input равна 0",
+            "code": "showError(<span></span>);<br><br><span></span> showError(<span></span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span><i>(input.value.length <span></span> 0)</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box.textContent <span></span> <span></span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>}",
+            "answers": ["if","function","else","===","=","'Ошибка в возрасте'","'Ошибка в возрасте'","text","text",">"],
+            "correct": ["'Ошибка в возрасте'","function","text","if","===","=","text"]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": 4,
+    "title": "События в JavaScript",
+    "practice": [
+        {
+            "task": "Запустите событие клика левой кнопкой мыши на элементе button, чтобы он перешел в состояние disabled",
+            "code": "document.querySelector('button').<span></span> ('<span></span>', (<span></span>) => { <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>e</i>.<span></span>.<span></span> = <span></span>; <br>});",
+            "answers": ["click","type","keyup","e","event","target","onclick","false","addEventListener","true","disabled"],
+            "correct": ["addEventListener","click","e","target","disabled","true"]
+        },
+        {
+            "task": "Запустите функцию checkEmail с введённым значением пользователя при отправке формы, если добавлен хотя бы один символ",
+            "code": "document.querySelector('<span></span>').addEventListener ('<span></span>', (e) => { <br>&nbsp;&nbsp;&nbsp;&nbsp;e.<span></span>();<br>&nbsp;&nbsp;&nbsp;&nbsp;if<i>(input.value.<span></span> > 0)</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checkEmail(<span></span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;} <br>});",
+            "answers": ["button","e","form","addEventListener","target","length","submit","input.value","document","preventDefault"],
+            "correct": ["form","submit","preventDefault","length","input.value"]
+        },
+        {
+            "task": "Скройте элемент константы overlay из разметки при отпускании пользователем клавиши Escape",
+            "code": "document.<span></span>('<span></span>', (<span></span>) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span></span><i>(e.<span></span> <span></span> 'Escape')</i> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overlay.<span></span>.display = 'none';<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}); ",
+            "answers": ["if","querySelector","else","===","!==","keydown","addEventListener","key","preventDefault","toggle","e","style","keyup","target"],
+            "correct": ["addEventListener","keyup","e","if","key","===","style"]
+        }
+    ]
+}

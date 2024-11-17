@@ -1,0 +1,46 @@
+{
+    "id": 29,
+    "title": "Базовый CSS",
+    "test": [
+        {
+            "question": "Что из перечисленного относится к классу в CSS?",
+            "answer": [".text-color","#title-main","button"],
+            "correct": 0
+        },
+        {
+            "question": "Что делает CSS?",
+            "answer": ["Создаёт оформление HTML-страниц","Отвечает за структуру сайта","Отправляет данные на сервер"],
+            "correct": 0
+        },
+        {
+            "question": "Какое CSS-свойство позволяет добавить внутренний отступ?",
+            "answer": ["width","padding","margin","border"],
+            "correct": 1
+        },
+        {
+            "question": "Что из перечисленного не относится к псевдоэлементам?",
+            "answer": ["::before","::after",":nth-child"],
+            "correct": 2
+        },
+        {
+            "question": "Что нужно указать, чтобы скрыть элемент в разметке?",
+            "answer": ["display: inline-block","display: flex","display: none"],
+            "correct": 2
+        },
+        {
+            "question": "Какое CSS-свойство и его значение нужно использовать, чтобы выровнять текст элемента h1 по центру?",
+            "answer": ["line-height: 1","text-align: center","font-style: center","margin: 0 auto"],
+            "correct": 1
+        },
+        {
+            "question": "Какое свойство определяет шрифт текста?",
+            "answer": ["font-family","display","font-view"],
+            "correct": 0
+        },
+        {
+            "question": "Какое свойство флекс-контейнера задаёт размер отступов между элементами?",
+            "answer": ["margin","gap","padding","left"],
+            "correct": 1
+        }
+    ]
+}  
