@@ -29,16 +29,19 @@ function addLessons() {
 
         content.insertAdjacentHTML('beforeend', `
         <div class="lesson" id="lesson-${i+1}">
-            <h3>${i+1}. ${main[i].name}</h3>
+            <a href="${main[i].link}" target="_blank"><h3>${i+1}. ${main[i].name}</h3></a>
             <p>${main[i].description}</p>
             <div class="lesson-list-wrap">
                 <ol>${setItems(main[i].lessons, i + 1)}</ol>
                 <div style="background-image: url(code/img/lessons/${i+1}_chapter.png)"></div>
             </div>
         </div>`);
+        if (i === main.length - 1) {
+            document.querySelectorAll('.lesson')[i].children[0].outerHTML = `<h3>${i+1}. ${main[i].name}</h3>`;
+        }
     }
 }
-
+//
 function setItems(arr, index) {
     let item = '';
     for (let i = 0; i < arr.length; i++) {
